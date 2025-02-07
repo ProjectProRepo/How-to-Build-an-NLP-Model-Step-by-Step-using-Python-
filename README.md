@@ -76,5 +76,5 @@ The final part of the tutorial involves building an NLP model to classify tweets
 - **N-gram Models**: Implement N-grams (bigrams and trigrams) to capture word patterns and relationships.
 - **Train the Model**: Train the NLP model using the preprocessed and feature-rich dataset.
 
-  If you need help, we recommend you check out [Teyang Lau’s Github Repository](https://github.com/teyang-lau/Disaster_Tweet_Classification/tree/main) for assistance. For a detailed explanation, check out the [ NLP Model Python blog](https://www.projectpro.io/article/how-to-build-an-nlp-model-step-by-step-using-python/915).
+If you need help, we recommend you check out [Teyang Lau’s Github Repository](https://github.com/teyang-lau/Disaster_Tweet_Classification/tree/main) for assistance. For a detailed explanation, check out the [ NLP Model Python blog](https://www.projectpro.io/article/how-to-build-an-nlp-model-step-by-step-using-python/915).
 
