@@ -2,64 +2,39 @@
 This repository contains a tutorial on setting up the Python environment for an NLP project focused on a disaster tweet classification problem. The goal of the project is to classify tweets as either related to disasters or not based on their content. The dataset used in this project was scraped from a reliable source, ensuring its relevance and accuracy for training an NLP model.
 
 ## Table of Contents
-
 1. [Prerequisites](#prerequisites)
-2. [Setup Instructions](#setup-instructions)
+2. [Setting Up the Environment](#setting-up-the-environment)
 3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 4. [Data Cleaning](#data-cleaning)
 5. [Feature Extraction](#feature-extraction)
-6. [Model Building](#model-building)
-7. [Word Embeddings](#word-embeddings)
-8. [Tokenization & Padding](#tokenization-padding)
-9. [Embedding Matrix](#embedding-matrix)
-10. [Licenses](#licenses)
-
----
+6. [Word Embeddings](#word-embeddings)
+7. [Model Building](#model-building)
+8. [Contributing](#contributing)
 
 ## Prerequisites
-Before setting up the environment, ensure that you have the following:
+Before you begin, ensure you have the following installed on your system:
 
-- Python 3.x
-- An Integrated Development Environment (IDE) like Jupyter Notebook, Spyder, Visual Studio Code, or PyCharm.
+- Python (latest version)
+- Integrated Development Environment (IDE) like Jupyter Notebook, Spyder, Visual Studio Code, or PyCharm
+- Required Python libraries (listed below)
 
-You will also need a few essential Python libraries for NLP tasks.
-
-## Setup Instructions
+## Setting Up the Environment
 
 ### Step 1: Install Python
-If you don’t have Python installed on your system, download the latest version from [python.org](https://www.python.org/). Ensure to check the box to add Python to your system's `PATH` during installation.
+If you don't have Python installed, you can download and install the latest version from [python.org](https://www.python.org/). Make sure to add Python to your system's PATH during installation for easier command-line access.
 
 ### Step 2: Choose an IDE
-For NLP development, we recommend using one of the following IDEs:
-- Jupyter Notebook
-- Spyder
-- Visual Studio Code
-- PyCharm
+For this project, we recommend using an IDE like Jupyter Notebook, Spyder, Visual Studio Code, or PyCharm. Install and configure your preferred IDE to work with Python.
 
-Install and configure your preferred IDE as per your needs.
-
-### Step 3: Install Libraries
-Install the necessary libraries for this project using pip. Run the following commands in your terminal or command prompt:
+### Step 3: Install Required Libraries
+You'll need the following Python libraries to implement the NLP model. Install them using the following pip command:
 
 ```bash
-pip install numpy pandas matplotlib seaborn nltk scikit-learn
-pip install tensorflow
+pip install numpy pandas matplotlib seaborn nltk scikit-learn tensorflow keras
 ```
 
 ## Step 4: Prepare the Input Dataset
-
 We will work with a dataset containing tweets labeled as disaster-related or non-disaster-related. Follow the instructions in the `data_preparation.py` file in this repository to download and prepare the dataset.
-
-**Steps**:
-1. Download the dataset from [insert dataset link here].
-2. After downloading, make sure to organize the data into two categories:
-   - **Disaster Tweets**
-   - **Non-Disaster Tweets**
-   
-3. The dataset is essential for training the classification model. The format of the data should be as follows:
-   - A CSV or JSON file format, with one column containing the tweet text and another column containing the label (1 for disaster-related, 0 for non-disaster).
-
-Ensure the data is placed in a folder called `data` within your project directory for easy access. 
 
 ## Exploratory Data Analysis (EDA)
 EDA is essential before diving into model building. Here, we will explore the dataset to identify missing values, understand the frequency of different characters, words, and sentences, and explore the distribution of stopwords and punctuation marks.
