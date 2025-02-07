@@ -44,7 +44,7 @@ EDA is essential before diving into model building. Here, we will explore the da
 - **Analyze Textual Data**: Explore the frequency distribution of words and sentences, focusing on stopwords and punctuation marks, and remove them for better model performance.
 - **Word Clouds**: Generate word clouds to visualize common terms used in the disaster-related and non-disaster-related tweets.
 
-# Data Cleaning
+## Data Cleaning
 Data cleaning is a critical step in NLP to ensure meaningful linguistic analysis. The following steps are implemented in this project:
 
 - **Handle Missing Data**: Replace missing values in the 'Keyword' column with 'None'.
@@ -52,7 +52,7 @@ Data cleaning is a critical step in NLP to ensure meaningful linguistic analysis
 - **Word Segmentation**: Break down the tweets into individual words (tokens).
 - **Lemmatization**: Reduce words to their base forms using lemmatization.
 
-# Feature Extraction
+## Feature Extraction
 Feature extraction is vital for enabling the NLP model to understand tweet content better. In this project, we create new features such as:
 
 - **Polarity**: Sentiment score ranging from -1 (negative) to 1 (positive).
@@ -61,18 +61,18 @@ Feature extraction is vital for enabling the NLP model to understand tweet conte
 
 These features are then added as new columns to the dataset.
 
-# Word Embeddings
+## Word Embeddings
 Word embeddings are dense numerical vectors that represent words in a multi-dimensional space. We use pretrained GloVe embeddings for this project.
 
 - **Tokenization**: Split tweets into individual words and assign a unique number to each word.
 - **Embedding Matrix**: Create an embedding matrix using the GloVe model to capture semantic relationships between words.
 
-# Model Building
+## Model Building
 The final part of the tutorial involves building an NLP model to classify tweets as disaster-related or not. We explore two popular models in NLP:
 
 - **LSTM (Long Short-Term Memory)**: A type of recurrent neural network that is ideal for handling sequential data like text.
 - **BERT (Bidirectional Encoder Representations from Transformers)**: A transformer-based model pre-trained on massive amounts of text data.
 
-## Model Building Steps:
+### Model Building Steps:
 - **N-gram Models**: Implement N-grams (bigrams and trigrams) to capture word patterns and relationships.
 - **Train the Model**: Train the NLP model using the preprocessed and feature-rich dataset.
